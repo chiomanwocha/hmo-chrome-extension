@@ -46,6 +46,7 @@ function startChunking(videoId) {
     };
 
     recorder.onstop = function () {
+      alert("Uploading...");
       completeRecording(videoId)
     };
   }
@@ -63,15 +64,18 @@ function completeRecording(videoId) {
     })
     .then(() => {
       // On success, open the details page in a new tab
+      alert("You will be redirected shortly");
       window.open(
         `https://hmo-frontend.vercel.app/recording-details/${videoId}`,
         "_blank"
       );
     })
     .catch((error) => {
-      console.error("Error:", error);
-      // Handle any errors that occurred during the request
-      alert("Recording completion was not successful.");
+      alert("Recording completion was not successful, but you will be redirected anyway.");
+      window.open(
+        `https://hmo-frontend.vercel.app/recording-details/${videoId}`,
+        "_blank"
+      );
     });
 }
 
@@ -114,6 +118,7 @@ function onAccessApproved(stream) {
 
   // Start chunking the video immediately
   startChunking(videoId);
+  alert('Recording has started!')
 }
 
 
