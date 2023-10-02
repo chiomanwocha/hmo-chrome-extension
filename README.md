@@ -15,6 +15,6 @@ The design specifications can be found here: [Figma Design](https://www.figma.co
 2. All pages in the design provided in Figma are implemented pixel-perfectly within the plugin.
 3. The plugin functions flawlessly on both desktop and mobile devices, with no significant visual or usability issues.
 4. Users can initiate and stop screen recording with clear controls.
-5.Recorded screen content is properly compressed and submitted to the specified endpoint.
+5. Recorded screen content is properly compressed and submitted to the specified endpoint.
 6. The submission process is error-free, and users receive confirmation upon successful submission.
 7. Any potential issues or errors are gracefully handled, and users receive appropriate feedback.
