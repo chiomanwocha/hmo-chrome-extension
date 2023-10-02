@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "short_name": "HelpMeOut",
+  "name": "HelpMeOut",
+  "author": "Chioma Nwocha",
+  "version": "1.0.0",
+  "description": "Help out by creating videos on how to get things done and sending out instantly",
+  "icons": {
+    "128": "/images/logo.png"
+  },
+
+  "background": {
+    "service_worker": "./background.js"
+  },
+
+  "action": {
+    "default_popup": "./index.html",
+    "default_icon": {
+      "16": "/images/logo.png",
+      "32": "/images/logo.png",
+      "128": "/images/logo.png"
+    }
+  },
+
+  "host_permissions": ["http://*/*", "https://*/*"],
+
+  "permissions": ["activeTab", "scripting", "tabs"]
+}

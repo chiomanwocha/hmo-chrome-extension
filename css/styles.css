@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background: none;
+  width: 100%;
+  border: none;
+  height: 100dvh;
+}
+
+.container {
+  width: 300px;
+  height: 439px;
+  padding: 24px 24px 32px 24px;
+  border: none;
+  border-radius: var(--Outer-Radius, 24px);
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo-h1 {
+  color: var(--primary-main, #120b48);
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo-container {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.text {
+  color: var(--primary-primary-400, #413c6d);
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 225px;
+  margin-bottom: 32px;
+}
+
+.full-screen {
+  color: var(--primary-primary-200, #928fab);
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.current-tab {
+  color: var(--primary-main, #120b48);
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.camera {
+  display: flex;
+  width: 252px;
+  padding: var(--Inner-Radius, 12px) var(--Inner-Radius, 12px)
+    var(--Inner-Radius, 12px) 16px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 252px;
+  padding: var(--Inner-Radius, 12px) var(--Inner-Radius, 12px)
+    var(--Inner-Radius, 12px) 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--Inner-Radius, 12px);
+  border: 1px solid var(--primary-primary-600, #100a42);
+}
+
+.camera h4 {
+  color: var(--primary-primary-600, #100a42);
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+button {
+  display: flex;
+  width: 252px;
+  height: 51px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fafdff;
+  border-radius: var(--Inner-Radius, 12px);
+  background: var(--primary-main, #120b48);
+  border: none;
+
+  /* Typography/Button/B2 */
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #120b48;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #120b48;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

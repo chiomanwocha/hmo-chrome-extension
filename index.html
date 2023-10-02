@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>HelpMeOut</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 16px;
+        "
+      >
+        <div class="logo-container">
+          <img
+            src="/images/logo.png"
+            alt="logo"
+            style="width: 28px; height: 28px"
+          />
+          <h2 class="logo-h1">HelpMeOut</h2>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px">
+          <img src="/images/setting.svg" alt="setting" />
+          <img src="/images/close-circle.svg" alt="close"/>
+        </div>
+      </div>
+      <div>
+        <div class="text">
+          This extension helps you record and share help videos with ease.
+        </div>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          padding: 0px 32px;
+          justify-content: space-between;
+          margin-bottom: 24px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="/images/monitor.svg"
+            alt="monitor"
+            style="width: 32px; height: 32px"
+          />
+          <h3 class="full-screen">Full screen</h3>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="/images/copy.svg"
+            alt="copy"
+            style="width: 32px; height: 32px"
+          />
+          <h3 class="current-tab">Current Tab</h3>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          margin-bottom: 24px;
+        "
+      >
+        <div class="camera">
+          <div style="display: flex; align-items: center; gap: 8px">
+            <img src="/images/video-camera.svg" alt="camera" />
+            <h4>Camera</h4>
+          </div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" checked="true"/>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="camera">
+          <div style="display: flex; align-items: center; gap: 8px">
+            <img src="/images/microphone.svg" alt="microphone" />
+            <h4>Audio</h4>
+          </div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" checked="true"/>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <button style="cursor: pointer" id="start_video">Start Recording</button>
+    </div>
+    <script type="module" src="./js/popup.js"></script>
+  </body>
+</html>
